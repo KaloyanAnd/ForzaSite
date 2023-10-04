@@ -1,0 +1,45 @@
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .car {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  
+  .car img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .car img:hover {
+    transform: scale(1.1);
+  }
+  
+  .car h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .car p {
+    margin: 0;
+  }
+
+  .manufacturer-filter {
+    margin-bottom: 10px;
+  }
+  
+  .manufacturer-filter label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .manufacturer-filter select {
+    font-size: 14px;
+    padding: 3px;
+  }
