@@ -15,7 +15,7 @@ function Header({ onRouteChange, currentRoute }) {
         <ul>
           <li>
             <button onClick={() => handleButtonClick('about')} className={currentRoute === 'about' ? 'active' : ''}>
-              About Game
+              About
             </button>
           </li>
           <li>

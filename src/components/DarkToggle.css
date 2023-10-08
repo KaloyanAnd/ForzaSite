@@ -1,0 +1,77 @@
+label {
+  position: fixed;
+  bottom: 1.5%;
+  right: 1%;
+  width: 65px;
+  height: 28px;
+  display: flex;
+  margin-top: -17px;
+  align-items: center;
+  background: #ebebeb;
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+label:after {
+    content: "";
+    width: 25px; /* Set the width to 25px */
+    height: 25px; /* Set the height to 25px */
+    position: absolute;
+    top: 2px; /* Adjust the top position for centering */
+    left: 5px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 25px; /* Set the border radius to 25px */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s, background-color 0.3s;
+  }
+  
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input:checked + label {
+    background: #242424;
+}
+input:checked + label:after {
+    left: calc(100% - 47%);
+  background: linear-gradient(180deg, #777, #232222);
+}
+label, label:after {
+    transition: 0.3s
+}
+label:active:after{ 
+    width: 26px; 
+}
+input:checked + label + .background {
+    background:#242424;
+  }
+
+label svg.sun,
+label svg.moon {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    z-index: 1; 
+}
+label svg.sun {
+    left: 26%;
+    fill: #fff;
+
+}
+label svg.moon {
+    left: 74%;
+    fill: #7e7e7e;
+
+}
+ 
+input:checked + label svg.sun {
+    fill: #7e7e7e;
+}
+  
+input:checked + label svg.moon {
+    fill: #fff;
+}
+  

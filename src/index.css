@@ -1,3 +1,12 @@
+::root{
+  --body_background: #fff;
+  --body_color: rgb(16, 16, 16);
+}
+[theme="dark"]{
+  --body_background: #262626;
+  --body_color: rgb(236, 231, 231);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
